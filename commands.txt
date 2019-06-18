@@ -1,0 +1,422 @@
+Last login: Mon Jun 17 16:03:36 on ttys000
+Saras-MacBook-Air:~ gadenver$ mkdir galaxy_far_far_away
+Saras-MacBook-Air:~ gadenver$ cd galaxy_far_far_away/
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ touch commands.txt
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mkdir death_star
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ touch death_star/darth_vader/txt death_star/princess_leia.txt
+touch: death_star/darth_vader/txt: No such file or directory
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ touch death_star/darth_vader.txt 
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ touch death_star/princess_leia.txt death_star/storm_trooper.txt
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mkdir tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd tatooine/
+Saras-MacBook-Air:tatooine gadenver$ touch luke.txt ben_kenobi.txt
+Saras-MacBook-Air:tatooine gadenver$ ls
+ben_kenobi.txt	luke.txt
+Saras-MacBook-Air:tatooine gadenver$ mkdir millenium_falcon
+Saras-MacBook-Air:tatooine gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ touch han_solo.txt chewbaca.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:tatooine gadenver$ ls
+ben_kenobi.txt		luke.txt		millenium_falcon
+Saras-MacBook-Air:tatooine gadenver$ mv ben_kenobi.txt obi_wan.txt
+Saras-MacBook-Air:tatooine gadenver$ ls
+luke.txt		millenium_falcon	obi_wan.txt
+Saras-MacBook-Air:tatooine gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv death_star tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd tatooine
+Saras-MacBook-Air:tatooine gadenver$ ls
+death_star		millenium_falcon
+luke.txt		obi_wan.txt
+Saras-MacBook-Air:tatooine gadenver$ mv death_star ../galaxy_far_far_away
+Saras-MacBook-Air:tatooine gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		galaxy_far_far_away	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd galaxy_far_far_away/
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+darth_vader.txt		princess_leia.txt	storm_trooper.txt
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		galaxy_far_far_away	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv galaxy_far_far_away/ death_star
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cp death_star/storm_trooper.txt tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd tatooine/
+Saras-MacBook-Air:tatooine gadenver$ ls
+luke.txt		obi_wan.txt
+millenium_falcon	storm_trooper.txt
+Saras-MacBook-Air:tatooine gadenver$ man mv
+Saras-MacBook-Air:tatooine gadenver$ mv luke.txt obi_wan.txt millenium_falcon
+Saras-MacBook-Air:tatooine gadenver$ ls
+millenium_falcon	storm_trooper.txt
+Saras-MacBook-Air:tatooine gadenver$ millenium_falcon
+-bash: millenium_falcon: command not found
+Saras-MacBook-Air:tatooine gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt	luke.txt	obi_wan.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:tatooine gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv tatooine/millenium_falcon galaxy_far_far_away 
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		galaxy_far_far_away
+death_star		tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv galaxy_far_far_away millenium_falcon
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		millenium_falcon
+death_star		tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt	luke.txt	obi_wan.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		millenium_falcon
+death_star		tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ pwd
+/Users/gadenver/galaxy_far_far_away
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv millenium_falcon  death_star
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		princess_leia.txt
+millenium_falcon	storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ pwd
+/Users/gadenver/galaxy_far_far_away
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ find gadenver/galaxy_far_far_away/ -iname *princess_leia*.txt
+find: gadenver/galaxy_far_far_away/: No such file or directory
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ locate princess.leia.txt
+
+WARNING: The locate database (/var/db/locate.database) does not exist.
+To create the database, run the following command:
+
+  sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.locate.plist
+
+Please be aware that the database can take some time to generate; once
+the database has been created, this message will no longer appear.
+
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd tatooine/
+Saras-MacBook-Air:tatooine gadenver$ ls
+storm_trooper.txt
+Saras-MacBook-Air:tatooine gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		princess_leia.txt
+millenium_falcon	storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv death_star/princess_leia.txt ../millenium_falcon
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ death_star
+-bash: death_star: command not found
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		millenium_falcon	storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt	luke.txt	obi_wan.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd..
+-bash: cd..: command not found
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		millenium_falcon	storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd .. 
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ tatooine
+-bash: tatooine: command not found
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd tatooine/
+Saras-MacBook-Air:tatooine gadenver$ ls
+storm_trooper.txt
+Saras-MacBook-Air:tatooine gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		millenium_falcon	storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt	luke.txt	obi_wan.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:death_star gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd ..
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Library			command-line-lab
+Creative Cloud Files	Movies			galaxy_far_far_away
+Desktop			Music			millenium_falcon
+Documents		Pictures
+Downloads		Public
+Saras-MacBook-Air:~ gadenver$ mv millenium_falcon princess_leia.txt
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Library			command-line-lab
+Creative Cloud Files	Movies			galaxy_far_far_away
+Desktop			Music			princess_leia.txt
+Documents		Pictures
+Downloads		Public
+Saras-MacBook-Air:~ gadenver$ mv princess_leia.txt galaxy_far_far_away/death_star/millenium_falcon
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Downloads		Pictures
+Creative Cloud Files	Library			Public
+Desktop			Movies			command-line-lab
+Documents		Music			galaxy_far_far_away
+Saras-MacBook-Air:~ gadenver$ cd galaxy_far_far_away/
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt		luke.txt		princess_leia.txt
+han_solo.txt		obi_wan.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ rm obi_wan.txt 
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt		luke.txt
+han_solo.txt		princess_leia.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:death_star gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mkdir yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv death_star/millenium_falcon ../yavin4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine	yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd yavin_4/
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+Saras-MacBook-Air:yavin_4 gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine	yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd ..
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Library			command-line-lab
+Creative Cloud Files	Movies			galaxy_far_far_away
+Desktop			Music			yavin4
+Documents		Pictures
+Downloads		Public
+Saras-MacBook-Air:~ gadenver$ cd galaxy_far_far_away/
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd ~
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Library			command-line-lab
+Creative Cloud Files	Movies			galaxy_far_far_away
+Desktop			Music			yavin4
+Documents		Pictures
+Downloads		Public
+Saras-MacBook-Air:~ gadenver$ mv yavin4 galaxy_far_far_way
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Library			command-line-lab
+Creative Cloud Files	Movies			galaxy_far_far_away
+Desktop			Music			galaxy_far_far_way
+Documents		Pictures
+Downloads		Public
+Saras-MacBook-Air:~ gadenver$ mv galaxy_far_far_way millenium_falcon
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Library			command-line-lab
+Creative Cloud Files	Movies			galaxy_far_far_away
+Desktop			Music			millenium_falcon
+Documents		Pictures
+Downloads		Public
+Saras-MacBook-Air:~ gadenver$ mv ~/millenium_falcon ~/galaxy_far_far_away
+Saras-MacBook-Air:~ gadenver$ ls
+Applications		Downloads		Pictures
+Creative Cloud Files	Library			Public
+Desktop			Movies			command-line-lab
+Documents		Music			galaxy_far_far_away
+Saras-MacBook-Air:~ gadenver$ cd galaxy_far_far_away/
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		millenium_falcon	yavin_4
+death_star		tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		millenium_falcon	yavin_4
+death_star		tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv galaxy_far_far_away/millenium_falcon galaxy_far_far_away/yavin4
+mv: rename galaxy_far_far_away/millenium_falcon to galaxy_far_far_away/yavin4: No such file or directory
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv galaxy_far_far_away/millenium_falcon galaxy_far_far_away/yavin_4
+mv: rename galaxy_far_far_away/millenium_falcon to galaxy_far_far_away/yavin_4: No such file or directory
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv galaxy_far_far_away/millenium_falcon galaxy_far_far_away/yavin_4
+mv: rename galaxy_far_far_away/millenium_falcon to galaxy_far_far_away/yavin_4: No such file or directory
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv millenium_falcon yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	death_star	tatooine	yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd yavin_4/
+Saras-MacBook-Air:yavin_4 gadenver$ mkdir x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt		luke.txt
+han_solo.txt		princess_leia.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ mv millenium_falcon/princess_leia.txt yavin_4/
+mv: rename millenium_falcon/princess_leia.txt to yavin_4/: No such file or directory
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt		luke.txt
+han_solo.txt		princess_leia.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ mv princess_leia.txt ../
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt	luke.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd..
+-bash: cd..: command not found
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ mv millenium_falcon/luke.txt yavin_4/x_wing
+mv: rename millenium_falcon/luke.txt to yavin_4/x_wing: No such file or directory
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ cd x_wing/
+Saras-MacBook-Air:x_wing gadenver$ ls
+Saras-MacBook-Air:x_wing gadenver$ cd ..
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ millenium_falcon/luke.txt x_wing/
+-bash: millenium_falcon/luke.txt: Permission denied
+Saras-MacBook-Air:yavin_4 gadenver$ cd millenium_falcon/
+Saras-MacBook-Air:millenium_falcon gadenver$ mv luke.txt /x_wing
+mv: rename luke.txt to /x_wing: Permission denied
+Saras-MacBook-Air:millenium_falcon gadenver$ mv luke.txt yavin_4/x_wing
+mv: rename luke.txt to yavin_4/x_wing: No such file or directory
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt	luke.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ mv luke.txt ../x_wing
+Saras-MacBook-Air:millenium_falcon gadenver$ ls
+chewbaca.txt	han_solo.txt
+Saras-MacBook-Air:millenium_falcon gadenver$ cd ..
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ cd x_wing
+Saras-MacBook-Air:x_wing gadenver$ ls
+luke.txt
+Saras-MacBook-Air:x_wing gadenver$ cd ..
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ mv millenium_falcon x_wing ../galaxy_far_far_away
+usage: mv [-f | -i | -n] [-v] source target
+       mv [-f | -i | -n] [-v] source ... directory
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ mv millenium_falcon ../galaxy_far_far_away
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		galaxy_far_far_away	yavin_4
+death_star		tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv galaxy_far_far_away millenium_falcon
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		millenium_falcon	yavin_4
+death_star		tatooine
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd yavin_4/
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ mv x_wing/ ../
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+princess_leia.txt
+Saras-MacBook-Air:yavin_4 gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		millenium_falcon	x_wing
+death_star		tatooine		yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd death_star/
+Saras-MacBook-Air:death_star gadenver$ mkdir tie_fighter_1 tie_fighter_2 tie_fighter_3
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		tie_fighter_1		tie_fighter_3
+storm_trooper.txt	tie_fighter_2
+Saras-MacBook-Air:death_star gadenver$ mv darth_vader.txt /tie_fighter_1
+mv: rename darth_vader.txt to /tie_fighter_1: Permission denied
+Saras-MacBook-Air:death_star gadenver$ ls
+darth_vader.txt		tie_fighter_1		tie_fighter_3
+storm_trooper.txt	tie_fighter_2
+Saras-MacBook-Air:death_star gadenver$ mv darth_vader.txt tie_fighter_1
+Saras-MacBook-Air:death_star gadenver$ ls
+storm_trooper.txt	tie_fighter_2
+tie_fighter_1		tie_fighter_3
+Saras-MacBook-Air:death_star gadenver$ cp storm_trooper.txt tie_fighter_2/storm.trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cp storm_trooper.txt tie_fighter_3/storm.trooper.txt
+Saras-MacBook-Air:death_star gadenver$ ls
+storm_trooper.txt	tie_fighter_2
+tie_fighter_1		tie_fighter_3
+Saras-MacBook-Air:death_star gadenver$ cd tie_fighter_2
+Saras-MacBook-Air:tie_fighter_2 gadenver$ ls
+storm.trooper.txt
+Saras-MacBook-Air:tie_fighter_2 gadenver$ cd ..
+Saras-MacBook-Air:death_star gadenver$ ls
+storm_trooper.txt	tie_fighter_2
+tie_fighter_1		tie_fighter_3
+Saras-MacBook-Air:death_star gadenver$ mv tie_fighter_1 tie_fighter_2 tie_fighter_3 ../
+Saras-MacBook-Air:death_star gadenver$ ls
+storm_trooper.txt
+Saras-MacBook-Air:death_star gadenver$ cd ..
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		tie_fighter_3
+death_star		tie_fighter_1		x_wing
+millenium_falcon	tie_fighter_2		yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		tie_fighter_3
+death_star		tie_fighter_1		x_wing
+millenium_falcon	tie_fighter_2		yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ rm tie_fighter_2 tie_fighter_3
+rm: tie_fighter_2: is a directory
+rm: tie_fighter_3: is a directory
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ rmdir tie_fighter_2 tie_fighter_3
+rmdir: tie_fighter_2: Directory not empty
+rmdir: tie_fighter_3: Directory not empty
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ rmdir -r tie_fighter_2 tie_fighter_3
+rmdir: illegal option -- r
+usage: rmdir [-p] directory ...
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		tie_fighter_3
+death_star		tie_fighter_1		x_wing
+millenium_falcon	tie_fighter_2		yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ rm -r tie-fighter_2 tie_fighter_3
+rm: tie-fighter_2: No such file or directory
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		x_wing
+death_star		tie_fighter_1		yavin_4
+millenium_falcon	tie_fighter_2
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ rm -r tie_fighter_2
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		yavin_4
+death_star		tie_fighter_1
+millenium_falcon	x_wing
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		yavin_4
+death_star		tie_fighter_1
+millenium_falcon	x_wing
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ touch x_wing/the_force.txt
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ rm -r death_star
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		x_wing
+millenium_falcon	tie_fighter_1		yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv x_wing yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt		tatooine		yavin_4
+millenium_falcon	tie_fighter_1
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ mv millenium_falcon yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ ls
+commands.txt	tatooine	tie_fighter_1	yavin_4
+Saras-MacBook-Air:galaxy_far_far_away gadenver$ cd yavin_4/
+Saras-MacBook-Air:yavin_4 gadenver$ ls
+millenium_falcon	princess_leia.txt	x_wing
+Saras-MacBook-Air:yavin_4 gadenver$ 
